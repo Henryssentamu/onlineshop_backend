@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> create account </title>
+    <link rel="stylesheet" href="../static/css-files/general-css-files/account-details.css">
+</head>
+<body>
+
+    <main class="main-container">
+        <section class="header">
+            <div>
+                v'shoes
+            </div>
+
+        </section>
+
+        <section class="form-section"> 
+
+            <form action="{{url_for('create_account')}}" method="POST">
+
+                
+                {{accountform.hidden_tag()}}
+                <div class="detail_section">
+                    {{accountform.first_name.label}}
+                    {{accountform.first_name()}}
+                </div>
+
+                <div class="detail_section">
+                    {{accountform.sir_name.label}}
+                    {{accountform.sir_name()}}
+                </div>
+
+                <div class="detail_section">
+                    {{accountform.email.label}}
+                    {{accountform.email()}}
+                </div>
+
+
+                <div class="detail_section">
+                    {{accountform.phone_number.label}}
+                    {{accountform.phone_number()}}
+                </div>
+
+                <div class="detail_section">
+                    {{accountform.user_name.label}}
+                    {{accountform.user_name()}}
+                </div>
+
+                <div class="detail_section">
+                    {{accountform.password.label}}
+                    {{accountform.password()}}
+                </div>
+
+                <div class="detail_section">
+                    {{accountform.confirm_password.label}}
+                    {{accountform.confirm_password()}}
+                </div>
+
+                
+
+                <div>
+                    {{accountform.submit()}}
+                </div>
+
+                {%if accountform.confirm_password.errors %}
+                    <ul>
+                        {% for error in accountform.confirm_password.errors %}
+                            <div  style="color: red;">
+                                {{error}}
+                            </div>
+                        {% endfor %}
+                    </ul>
+                {%endif %}
+
+            </form>
+
+        </section>
+
+
+
+
+    </main>
+    
+</body>
+</html>

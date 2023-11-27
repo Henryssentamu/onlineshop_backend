@@ -1,0 +1,94 @@
+.product-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    margin-right: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 400px;
+    
+}
+
+.product-image-section{
+    flex: 1fr;
+    margin-left: 25px;
+}
+
+.image-link{
+    text-decoration: none;
+}
+
+.product-image{
+    width: 250px;
+}
+
+
+
+
+
+
+.details-container{
+    flex: 1fr;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name{
+   flex: 1fr; 
+   width: 200px;
+   margin-left: 15px;
+   padding-bottom: 20px;
+   font-family: "Robato", sans-serif;
+   font-size: medium;
+   font-weight: 500;
+
+
+}
+
+.shopping-details{
+    flex: 1fr;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.product-price{
+    flex: 1fr;
+    margin-right: 100px;
+    margin-left: 15px;
+}
+
+.select-qantity{
+    flex: 1fr;
+}
+
+
+
+.button-section{
+    flex: 1fr;
+    margin-left: 25px;
+    
+}
+
+.add-to-chart-button{
+    padding: 10px 100px;
+    background-color: rgb(255, 153, 0);
+    border-color:  white;
+    font-family: "Robato",sans-serif;
+    font-size: large;
+    font-weight: 700;
+    color: white;
+}
+
+.added-to-chart-notification-css{
+    flex: 1fr;
+    margin-left: 100px;
+    color: rgb(1, 88, 1);
+    font-family: "Robato", sans-serif;
+    font-size: large;
+    font-weight:500 ;
+    
+
+}

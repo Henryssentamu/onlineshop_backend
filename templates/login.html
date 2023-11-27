@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <form method="POST", action="{{url_for('login')}}">
+            {{loginform.hidden_tag()}}
+
+            {% if message %}
+                <di style="color: red;">
+                    {{message}}: try again 
+                </di>
+            
+            {% endif %}
+            <div>
+                {{loginform.username.label}}
+                {{loginform.username()}}
+            </div>
+
+            <div>
+                {{loginform.email.label}}
+                {{loginform.email()}}
+            </div>
+            <div>
+                {{loginform.password.label}}
+                {{loginform.password()}}
+            </div>
+
+        
+            <div>
+                {{loginform.submit()}}
+            </div>
+
+             
+        </form>
+    </section>
+    
+</body>
+</html>

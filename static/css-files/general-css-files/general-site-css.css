@@ -1,0 +1,41 @@
+body{
+    background-color: aliceblue;
+}
+
+.general_site{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header_section{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(19, 25, 33);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top:0px;
+    z-index: 500;
+}
+
+.main_body_section{
+    margin-top: 75px;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr 1fr;
+   
+    
+
+}
+
+
+/* css which cater for all links on the general site page ie main page */
+
+.all-links-on-general-sit{
+    text-decoration: none;
+}
+

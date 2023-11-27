@@ -1,0 +1,22 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70px;
+    background-color: rgb(19,25, 33);
+    
+}
+
+.header{
+    color: white;
+
+}
+
+.form-section{
+
+}
+
+
+.detail_section{
+    margin: 7px;
+}
+

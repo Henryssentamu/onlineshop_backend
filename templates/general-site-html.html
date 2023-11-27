@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v&#39;shoes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../static/css-files/general-css-files/general-site-css.css">
+    <link rel="stylesheet" href="../../static/css-files/general-css-files/logo-section.css">
+    <link rel="stylesheet" href="../../static/css-files/general-css-files/search-section.css">
+    <link rel="stylesheet" href="../../static/css-files/general-css-files/account-details.css">
+    <link rel="stylesheet" href="../../static/css-files/generted-css-files/generated-main-html.css">
+</head>
+<body>
+    <div class="general_site">
+
+        <header class="header_section">
+            <section class="logo-section"> 
+                <div class="logo-part">
+                    <!-- logo link which redirect to home page onclick and this is to be built in backend ie home/route url -->
+                    <a class="all-links-on-general-sit" href="{{url_for('home')}}">v&#39;shoes</a>
+                </div>
+
+                <div class="deliver-selection">
+                    <div class="loction-icon">
+                        <i class="fa fa-map-marker" aria-hidden="true" class="l-icon"></i>
+
+                    </div>
+                    <div class="loction-selection">
+                        <div class="holder"> 
+                            Deliver to
+                        </div>
+
+                        <select class="select" >
+                            <option value="kampala">Kampala</option>
+                            <option value="Wakiso"> Wakiso </option>
+                            <option value="MUkono">Mukono</option>
+                        </select>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <section class="search-section">
+
+
+                <div class="select-search">
+                    <select class="select-list" >
+                        <option value="all">
+                            all
+                        </option>
+
+                        <option value="women">
+                            women
+                        </option>
+
+                        <option value="men">
+                            men
+                        </option>
+
+                        <option value="kids">
+                            kids
+                        </option>
+
+                        <option value="babies">
+                            babies
+                        </option>
+                    </select>
+                </div>
+                <div class="search-item">
+                    <input placeholder="search" type="text" class="search-input">
+                </div>
+                <div class="search-icon">
+                    <button class="search-button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+
+                    </button>
+
+                </div>
+            </section>
+
+
+
+            <section class="account-details-section">
+                <div class="creat-login-account">
+                    <div class="holder"> 
+                        Hello sign in 
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="trigger">Account & Lists</div>
+                        <div class="container">
+
+                            <section class="login-part">
+                                <!-- links for both creating account and login to be done in backend -->
+                                <a class="all-links-on-general-sit" href="{{url_for('login')}}">login </a>
+                            </section>
+                            <section class="creat-account">
+                                <a class="all-links-on-general-sit" href="{{url_for('create_account')}}">creat account</a>
+                            </section>
+
+                        </div>
+                       
+
+
+                    </div>
+                </div>
+                <div class="order-returns">
+                    <div class="holder">
+                        Returns
+                    </div>
+
+                    <div class="orders">
+                        <!--link to orders page and if the user does not have account, s/he must be redirected to create account first. and this is to be done in backend -->
+                        <a class="all-links-on-general-sit" href="{{url_for('orders_returns')}}"> & Orders </a>
+                    </div>
+                </div>
+
+
+
+                <div class="shopping-list-container">
+                    <!--link to the shopping list and to be done in backend -->
+                    <a class="shopping-list" href="{{url_for('view_chart')}}">
+
+                        <div class="chart-icon-section">
+                            <img src="../../static/icons/cart-icon (1).png">
+    
+                        </div>
+                        <div class="chart-discription">
+                            chart
+                        </div>
+    
+                        <div class="number-of-orders">0</div>
+
+                    </a>
+
+                    
+                </div>
+
+            </section>
+
+        </header>
+
+
+
+
+        <main class="main_body_section">
+
+        </main>
+    </div>
+
+
+
+    
+
+
+    <script src="../static/generated-htmls/main-body.js" type="module">
+    </script>
+    <script type="module" src="../static/generated-htmls/main-body.js"></script>
+    
+</body>
+</html>

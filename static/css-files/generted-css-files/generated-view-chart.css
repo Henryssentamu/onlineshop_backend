@@ -1,0 +1,31 @@
+.main-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.image-section{
+    flex: 1fr;
+}
+
+.actual-image{
+    width: 250px;
+}
+
+.other-details{
+    flex: 2fr;
+}
+
+
+
+.payment-container{
+    background-color: aqua;
+
+}
+
+

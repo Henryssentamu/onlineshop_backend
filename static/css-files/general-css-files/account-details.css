@@ -1,0 +1,139 @@
+.account-details-section{
+    flex: 2fr;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-right: 20px;
+}
+
+/* css for login part */
+
+.creat-login-account{
+    flex: 1fr;
+    display: flex;
+    flex-direction: column;
+}
+
+.creat-login-account .holder{
+    flex: 1fr;
+}
+
+.creat-login-account .dropdown-menu{
+    flex: 1fr;
+    display: block;
+    position: relative;
+}
+
+.creat-login-account  .container{
+    display: none;
+    position: absolute;
+}
+
+.creat-login-account .dropdown-menu:hover .container{
+    display: block;
+    min-width: 160px;
+    box-shadow: 1px 1px 0.15px rgba(44, 42, 42, 0.57);
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+
+}
+
+.creat-login-account .trigger{
+    font-family: "Popines", sans-serif;
+    font-weight: bold;
+}
+.creat-login-account .trigger:hover{
+    cursor: pointer;
+}
+
+.creat-login-account:hover{
+    cursor: pointer;
+    /*border: 1px solid white;*/
+}
+
+/* css for orders and returns */
+
+
+.order-returns{
+    flex: 1fr;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.order-returns,
+ .holder{
+    flex: 1fr;
+}
+
+.order-returns
+.orders{
+    flex: 1fr;
+    font-family: "Popines",sans-serif;
+    font-weight: bold;
+    
+}
+
+.orders .all-links-on-general-sit{
+    color: white;
+}
+
+.order-returns:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+
+
+/* css for shopping details or chart section */
+
+.shopping-list-container{
+    flex: 1fr;
+
+}
+
+.shopping-list{
+    
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    text-decoration: none;
+    color:white
+}
+
+.chart-icon-section{
+    flex: 1fr;
+}
+
+.chart-icon-section img{
+    width: 50px;
+}
+
+.chart-discription{
+    flex: 1fr;
+    margin-top: 19px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    }
+
+    .number-of-orders{
+        position: absolute;
+        color: orange;
+        font-size: large;
+        font-weight: 500;
+        font-family: sans-serif;
+        right: 50.5px;
+        top: -1px;
+    }
+
+    .shopping-list:hover{
+        border: 1px solid white;
+        cursor: pointer;
+    }
